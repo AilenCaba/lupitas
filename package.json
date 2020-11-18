@@ -1,5 +1,5 @@
 {
-  "name": "entrega",
+  "name": "lupitas",
   "version": "1.0.0",
   "description": "Lupitas",
   "main": "index.js",
@@ -7,12 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-   
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.6"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AilenCaba/lupitas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AilenCaba/lupitas/issues"
+  },
+  "homepage": "https://github.com/AilenCaba/lupitas#readme"
 }
