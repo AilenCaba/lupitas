@@ -4,6 +4,15 @@ $crema:#ECECEC;
 $primaria: 'Secular One';
 $secundaria: 'Montserrat';
 
+html, body {
+    height: 100%;
+    margin: 0px;
+  }
+  
+  .container, .row {
+    height: 100%;
+  } 
+
 body{
     background-color: $rosa;
 
@@ -27,6 +36,8 @@ body{
 .navbar{
 
     font-family: $primaria;
+    font-size: 12px;
+    color:$crema;
     
 }
 
@@ -56,13 +67,17 @@ body{
     background: pink;
    
 }
+.nav > .navbar > a:hover {
+    background: pink;
+   
+}
 
    #fondo {
         background-image: url(../fotos/logo.png);
           
         color:$rosa;
-        padding: 7rem;
-               bottom: 45px;
+        padding: 4rem;
+               bottom: 40px;
                position: relative;
          
         width: 30%;
@@ -95,15 +110,21 @@ body{
 
               
         .card-deck{
-            margin: 2rem;
-            padding: 2rem;
-            min-height: 10px;
+            margin: auto;
+            padding: auto;
+            min-height: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             .card{
                 background-color: $crema;
                 font-family: $secundaria;
                 transition: 150ms ease-in-out;
             margin: 2rem;
             min-height: 10px;
+            justify-content: center;
+            align-items: center;
+           
             &:hover{
                 transform: scale(1.05);
 
@@ -131,16 +152,18 @@ body{
         }
 
         .card-group{
-            margin: auto;
-            padding: 2rem;
-            justify-items: auto;
-            min-height: 100px;
+            margin: 0rem;
+            padding: 0rem;
+            justify-items: center;
+            min-height: 0rem;
+            flex-wrap: wrap;
                        .card{
                 background-color: $crema;
                 font-family: $primaria;
                 transition: 150ms ease-in-out;
             margin: 3rem;
             min-height: 100px;
+           
             &:hover{
                 transform: scale(1.05);
                 color: pink;
@@ -158,6 +181,7 @@ body{
                     color:black;
                         letter-spacing: normal;
                     position: relative;
+                    
 
             }
     
@@ -578,7 +602,7 @@ color: black;
             float: right;
         }
      #wrap{
-  margin: 0 auto;
+  margin: auto;
   width: 500px;
   justify-content: center;
 }
@@ -597,6 +621,8 @@ details{border: 1px;
       font-size: 16px;
       cursor: pointer;
       }}
+
+      
 
       
 

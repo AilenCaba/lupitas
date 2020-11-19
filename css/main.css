@@ -1,3 +1,10 @@
+html, body {
+  height: 100%;
+  margin: 0px; }
+
+.container, .row {
+  height: 100%; }
+
 body {
   background-color: #f93960; }
 
@@ -35,11 +42,14 @@ body {
 .nav > li.instagram > a:hover {
   background: pink; }
 
+.nav > .navbar > a:hover {
+  background: pink; }
+
 #fondo {
   background-image: url(../fotos/logo.png);
   color: #f93960;
-  padding: 7rem;
-  bottom: 45px;
+  padding: 4rem;
+  bottom: 40px;
   position: relative;
   width: 30%;
   height: 50%;
@@ -59,15 +69,20 @@ section h1 {
   font-size: 3rem; }
 
 .card-deck {
-  margin: 2rem;
-  padding: 2rem;
-  min-height: 10px; }
+  margin: auto;
+  padding: auto;
+  min-height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
   .card-deck .card {
     background-color: #ECECEC;
     font-family: "Montserrat";
     transition: 150ms ease-in-out;
     margin: 2rem;
-    min-height: 10px; }
+    min-height: 10px;
+    justify-content: center;
+    align-items: center; }
     .card-deck .card:hover {
       transform: scale(1.05); }
       .card-deck .card:hover .card-text {
@@ -81,10 +96,11 @@ section h1 {
         position: relative; }
 
 .card-group {
-  margin: auto;
-  padding: 2rem;
-  justify-items: auto;
-  min-height: 100px; }
+  margin: 0rem;
+  padding: 0rem;
+  justify-items: center;
+  min-height: 0rem;
+  flex-wrap: wrap; }
   .card-group .card {
     background-color: #ECECEC;
     font-family: "Secular One";
@@ -539,10 +555,37 @@ details {
 
 
    
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 360px) {
       body {
         background-color: $rosa; 
       }
+      .form_wrap {
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: auto;
+      }
+      .cantact_info::before {
+        content: '';
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2C3E50;
+        opacity: 0.9; }
+      
+      .cantact_info {
+        width: 10%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      
+        background-size: cover;
+        background-position: center center; }
+      
       
      
   @media only screen and (min-width: 1024px) {
