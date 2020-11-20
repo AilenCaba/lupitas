@@ -9,18 +9,25 @@ body {
   background-color: #f93960; }
 
 .carousel-slide {
-  width: 50%;
-  height: 100%; }
+  width: 640px;
+  height: 360px;
+  align-items: center; }
 
 .carousel-item {
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  align-items: center; }
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%; }
 
 .navbar {
-  font-family: "Secular One"; }
+  font-family: "Secular One";
+  font-size: 12px;
+  color: #ECECEC; }
 
 .nav-link {
   color: #ECECEC; }
@@ -48,8 +55,8 @@ body {
 #fondo {
   background-image: url(../fotos/logo.png);
   color: #f93960;
-  padding: 4rem;
-  bottom: 40px;
+  padding: 7rem;
+  bottom: 18px;
   position: relative;
   width: 30%;
   height: 50%;
@@ -71,7 +78,8 @@ section h1 {
 .card-deck {
   margin: auto;
   padding: auto;
-  min-height: auto;
+  max-width: 100%;
+  height: auto;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
@@ -93,13 +101,19 @@ section h1 {
         display: inline-block;
         color: black;
         letter-spacing: normal;
-        position: relative; }
+        position: relative;
+        max-width: 100%;
+        height: auto; }
+  .card-deck iframe {
+    max-width: 100%;
+    height: auto; }
 
 .card-group {
   margin: 0rem;
   padding: 0rem;
   justify-items: center;
-  min-height: 0rem;
+  max-width: 100%;
+  height: auto;
   flex-wrap: wrap; }
   .card-group .card {
     background-color: #ECECEC;
@@ -267,9 +281,9 @@ body {
 
 /* FORMULARIO =================================== */
 .form_wrap {
-  width: 1050px;
-  height: 530px;
-  margin: 50px auto;
+  width: auto;
+  height: auto;
+  margin: auto;
   display: flex;
   background: #ECECEC;
   border-radius: 10px;
@@ -439,8 +453,8 @@ form.form_contact input[type="button"]:hover {
   float: right; }
 
 #wrap {
-  margin: 0 auto;
-  width: 500px;
+  margin: auto;
+  width: 300px;
   justify-content: center; }
 
 details {
@@ -448,8 +462,9 @@ details {
   padding: 5px;
   font-family: "Montserrat";
   margin-bottom: 25px;
-  width: 500px;
-  background-color: #f93960; }
+  width: 300px;
+  background-color: #f93960;
+  right: 50px; }
   details p, details a, details span {
     font-size: 14px;
     color: #ECECEC; }
@@ -458,138 +473,3 @@ details {
     color: #2C3E50;
     font-size: 16px;
     cursor: pointer; }
-
-    @media only screen and (min-width: 360px) {
-      body {
-      
-        box-sizing: border-box;
-  
-      }
-      .navbar {
-        font-family: "Secular One";
-        
-       
-      
-      }
-
-      .navicon-set {
-                color: #ECECEC;
-        margin: 10px; }
-      
-      .navnavbar-redes {
-        margin: 10px; }
-      
-      .fa {
-        color: #ECECEC; }
-      
-      .nav > li.facebook > a:hover {
-        background: pink; }
-      
-      .nav > li.instagram > a:hover {
-        background: pink; }
-      
-
-      #fondo {
-        background-image: url(../fotos/logo.png);
-        color: #f93960;
-        padding: 2rem;
-                width: 20%;
-        height: 30%;
-        background-size: cover;
-        align-items: center;
-        background-position: center, center; }
-
-    }
-
-    .card-deck {
-      margin: auto;
-      padding: auto;
-      min-height: auto; }
-      .card-deck .card {
-        background-color: #ECECEC;
-        font-family: "Montserrat";
-        transition: 150ms ease-in-out;
-        margin: 0rem;
-        min-height: auto; }
-        .card-deck .card:hover {
-          transform: scale(1.05); }
-          .card-deck .card:hover .card-text {
-            font-family: "Montserrat";
-            margin: auto;
-            
-            }
-            .card-group {
-              margin: auto;
-              padding: 0rem;
-              justify-items: auto;
-              min-height: 10px; }
-              .card-group .card {
-                background-color: #ECECEC;
-                font-family: "Secular One";
-                transition: 150ms ease-in-out;
-                justify-items: center;
-                margin: 3rem;
-                min-height: 10px; }
-                .card-group .card:hover {
-                  transform: scale(1.05);
-                  color: pink; }
-              .card-group .card-text {
-                font-family: "Montserrat";
-                justify-items: auto;
-                margin: auto;
-                letter-spacing: auto;
-                                color: black;
-                letter-spacing: auto;
-                }
-                .carousel-slide {
-                  width:auto;
-                  height:auto; }
-                
-                .carousel-item {
-                  background: no-repeat center center scroll;
-                  -webkit-background-size: auto;
-                  -moz-background-size: auto;
-                  -o-background-size: auto;
-                  background-size: auto; }
-
-
-
-   
-  @media only screen and (min-width: 360px) {
-      body {
-        background-color: $rosa; 
-      }
-      .form_wrap {
-        width: auto;
-        height: auto;
-        margin: auto;
-        display: auto;
-      }
-      .cantact_info::before {
-        content: '';
-        width: auto;
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #2C3E50;
-        opacity: 0.9; }
-      
-      .cantact_info {
-        width: 10%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      
-        background-size: cover;
-        background-position: center center; }
-      
-      
-     
-  @media only screen and (min-width: 1024px) {
-      body {
-        background-color: $rosa;
-      }
-    }

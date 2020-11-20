@@ -20,10 +20,14 @@ body{
 
 .carousel-slide{
 
-    width: 50%;
-    height: 100%;
+    width:640px;
+    height:360px;
+    align-items: center;
 
 }
+
+
+
 
 .carousel-item {
     
@@ -32,7 +36,14 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    align-items: center;
+    
+
   }
+
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
 .navbar{
 
     font-family: $primaria;
@@ -76,8 +87,8 @@ body{
         background-image: url(../fotos/logo.png);
           
         color:$rosa;
-        padding: 4rem;
-               bottom: 40px;
+        padding: 7rem;
+               bottom: 18px;
                position: relative;
          
         width: 30%;
@@ -112,7 +123,8 @@ body{
         .card-deck{
             margin: auto;
             padding: auto;
-            min-height: auto;
+            max-width: 100%;
+            height: auto;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
@@ -139,6 +151,8 @@ body{
                         color:black;
                             letter-spacing: normal;
                         position: relative;
+                        max-width: 100%;
+ height: auto;
     
                 } 
             }
@@ -147,7 +161,11 @@ body{
                            
             }
            
+            iframe {
 
+                max-width: 100%;
+ height: auto;
+            }
 
         }
 
@@ -155,7 +173,8 @@ body{
             margin: 0rem;
             padding: 0rem;
             justify-items: center;
-            min-height: 0rem;
+            max-width: 100%;
+ height: auto;
             flex-wrap: wrap;
                        .card{
                 background-color: $crema;
@@ -389,9 +408,9 @@ color: black;
         /* FORMULARIO =================================== */
         
         .form_wrap{
-            width: 1050px;
-            height: 530px;
-            margin: 50px auto;
+            width: auto;
+            height: auto;
+            margin: auto;
             display: flex;
         
             background:  $crema;
@@ -603,15 +622,16 @@ color: black;
         }
      #wrap{
   margin: auto;
-  width: 500px;
+  width: 300px;
   justify-content: center;
 }
 details{border: 1px;
     padding: 5px;
     font-family: $secundaria;
     margin-bottom:25px;
-    width:500px;
+    width:300px;
     background-color: $rosa;
+    right: 50px;
     p, a, span{
         font-size: 14px;
     color:$crema;}
