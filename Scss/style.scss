@@ -20,14 +20,14 @@ body{
 
 .carousel-slide{
 
-    width: 1200px;
-    height:600px;
+    width: 360px;
+    height:auto;
     align-items: center;
 
 }
 
 .carousel-inner img {
-    height: 100%;
+    height: auto;
     width: 100%;
     object-fit: contain;
  }
