@@ -20,14 +20,14 @@ body{
 
 .carousel-slide{
 
-    width: 360px;
+    width: 1200px;
     height:auto;
     align-items: center;
 
 }
 
 .carousel-inner img {
-    height: auto;
+    height: 100%;
     width: 100%;
     object-fit: contain;
  }
@@ -147,7 +147,7 @@ body{
 
               
         .card-deck{
-            margin: auto;
+            margin: 10px;
             padding: auto;
             max-width: 100%;
             height: auto;
@@ -653,6 +653,7 @@ color: black;
   justify-content: center;
 }
 details{border: 1px;
+    background-color: $crema;
     padding: 5px;
     font-family: $secundaria;
     margin-bottom:25px;

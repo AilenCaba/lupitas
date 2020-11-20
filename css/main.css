@@ -9,12 +9,12 @@ body {
   background-color: #f93960; }
 
 .carousel-slide {
-  width: 360px;
+  width: 1200px;
   height: auto;
   align-items: center; }
 
 .carousel-inner img {
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: contain; }
 
@@ -98,7 +98,7 @@ section h1 {
   font-size: 3rem; }
 
 .card-deck {
-  margin: auto;
+  margin: 10px;
   padding: auto;
   max-width: 100%;
   height: auto;
@@ -481,6 +481,7 @@ form.form_contact input[type="button"]:hover {
 
 details {
   border: 1px;
+  background-color: #ECECEC;
   padding: 5px;
   font-family: "Montserrat";
   margin-bottom: 25px;
