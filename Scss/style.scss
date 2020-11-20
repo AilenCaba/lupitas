@@ -437,7 +437,7 @@ color: black;
         .form_wrap{
             width: auto;
             height: auto;
-            margin: auto;
+            margin: 10px;
             display: flex;
         
             background:  $crema;
@@ -479,7 +479,7 @@ color: black;
         .info_title,
         .info_items{
             position: relative;
-            z-index: 2;
+            z-index: 1;
             color: #fff;
         }
         
@@ -488,14 +488,14 @@ color: black;
         }
         
         .info_title span{
-            font-size: 100px;
+            font-size: px;
             display: block;
             text-align: center;
             margin-bottom: 15px;
         }
         
         .info_title h2{
-            font-size: 35px;
+            font-size: 25px;
             text-align: center;
         }
         
@@ -503,7 +503,7 @@ color: black;
             display: flex;
             align-items: center;
         
-            font-size: 16px;
+            font-size: 13px;
             font-weight: 600;
             margin-bottom: 10px;
         }
